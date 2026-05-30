@@ -1,0 +1,73 @@
+/* FAQ Item Question Styling */
+.faq-item .faq-question {
+    color: #333; /* Text color for questions */
+    margin-bottom: 10px; /* Space between question and answer */
+    cursor: pointer; /* Pointer cursor on hover for interactivity */
+    font-size: 18px; /* Adjust font size for better visibility */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.faq-item .faq-answer {
+    font-size: 16px; /* Font size for answers */
+    color: #666; /* Lighter text color for answers */
+    line-height: 1.5; /* Line height for readability */
+    display: none; /* Initially hide answers */
+    margin-top: 10px; /* Space between question and answer */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Show answer when the item is active */
+    opacity: 1; /* Fade in the answer */
+}
+
+.faq-item .faq-toggle-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.faq-item .faq-toggle-icon:after {
+    content: "+";
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Color for toggle icon */
+}
+
+.faq-item.active .faq-toggle-icon:after {
+    content: "-"; /* Change icon when item is expanded */
+}
+
+/* Hover effect on question */
+.faq-item .faq-question:hover {
+    color: #007bff; /* Change color on hover for better interactivity */
+}
+
+/* Focus effect for accessibility */
+.faq-item .faq-question:focus {
+    outline: 2px solid #007bff; /* Focus outline for better accessibility */
+}
+
+/* Responsive Design for FAQ Section */
+@media (max-width: 768px) {
+    .faq-section h1 {
+        font-size: 28px; /* Smaller font size for headings on smaller screens */
+    }
+
+    .faq-item {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .faq-item .faq-question {
+        font-size: 18px; /* Adjust font size for questions on smaller screens */
+    }
+
+    .faq-item .faq-answer {
+        font-size: 14px; /* Smaller font size for answers */
+    }
+}
+

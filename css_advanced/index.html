@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gisa</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Courses</a>
+            <a href="#">Pricing</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="schooled">
+                <h1>Get Schooled</h1>
+                <p class="schooled-text">
+                    <span>GISA</span>
+                    <span>GRIN</span>
+                    <span>LAUGH</span>
+                </p>
+                <button class="register-btn">REGISTER FOR FREE</button>
+            </div>
+            <div class="pros">
+                <h2>Learn from the pros</h2>
+                <div class="pros-cards">
+                    <!-- Pros Cards (Similar to your example) -->
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h1>Popular Tutorials</h1>
+            <div class="video-cards">
+                <!-- Video Cards (Similar to your example) -->
+            </div>
+        </section>
+
+        <section class="membership-section">
+            <h1>Free Membership</h1>
+            <div class="membership-cards">
+                <!-- Membership Cards (Similar to your example) -->
+            </div>
+            <button class="register-btn">REGISTER FOR FREE</button>
+        </section>
+
+        <section class="faq-section">
+            <h1>F.A.Q.</h1>
+            <div class="faq-list">
+                <!-- FAQ Items (Similar to your example) -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <img src="imgs/logo.png" alt="Logo">
+                <div>
+                    <a href="#"><img src="svgs/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="svgs/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="svgs/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Gisa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add event listener for 'REGISTER FOR FREE' buttons
+        const registerButtons = document.querySelectorAll('.register-btn');
+        registerButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for registering!');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
